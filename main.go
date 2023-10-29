@@ -12,16 +12,16 @@ func main() {
 
 	
 	fmt.Println("Set Page")
-	// page := browser.MustPage("https://www.wikipedia.org/")
-    // fmt.Println("Navigating to page")
-    // page.MustWaitStable()
-    // simulateScroll(page)
-    // fmt.Println(
-    //     page.MustEval("() => document.title"),	
-	// )
-	page := browser.MustPage("http://api.ipify.org")
-    fmt.Println("Set title")
-	// IP address should be the same, since we are using local
-	// proxy, however the response signals that the proxy works
-	println(page.MustElement("html").MustText())
+	page := browser.MustPage("https://www.wikipedia.org/")
+    fmt.Println("Navigating to page")
+    page.MustWaitStable()
+    simulateScroll(page)
+    fmt.Println(
+        page.MustEval("() => document.title"),	
+	)
+	// page := browser.MustPage("http://api.ipify.org")
+    // fmt.Println("Set title")
+	// // IP address should be the same, since we are using local
+	// // proxy, however the response signals that the proxy works
+	// println(page.MustElement("html").MustText())
 }

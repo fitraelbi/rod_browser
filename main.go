@@ -20,7 +20,7 @@ func main() {
     //     page.MustEval("() => document.title"),	
 	// )
 	page := browser.MustPage("http://api.ipify.org")
-
+    fmt.Println("Set title")
 	// IP address should be the same, since we are using local
 	// proxy, however the response signals that the proxy works
 	println(page.MustElement("html").MustText())

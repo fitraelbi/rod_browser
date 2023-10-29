@@ -15,7 +15,6 @@ func main() {
 	page := browser.MustPage("https://www.wikipedia.org/")
     fmt.Println("Navigating to page")
     page.MustWaitStable()
-    simulateScroll(page)
     fmt.Println(
         page.MustEval("() => document.title"),	
 	)

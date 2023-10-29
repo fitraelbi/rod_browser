@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-    u := "ws://127.0.0.1:9222/devtools/browser/a8c769c7-9af2-4643-8ea4-83f9553d99fa"
+    u := "ws://127.0.0.1:9222/devtools/browser/0d1e3c70-31bc-4907-847c-6b0dbbf8064e"
     browser := rod.New().ControlURL(u).MustConnect()
 
 	
